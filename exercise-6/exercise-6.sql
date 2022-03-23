@@ -7,7 +7,7 @@ email,
 RANK () OVER (ORDER BY SUM(amount) DESC)
 FROM
 customer
-LEFT JOIN
+INNER JOIN
 rental
 ON
 customer.customer_id = rental.customer_id
